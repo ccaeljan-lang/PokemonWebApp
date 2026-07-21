@@ -3,8 +3,8 @@ Butterfree,32.0kg,1.1m,.45,.50,.70,Bug-Flying
 Bulbasaur,6.9kg,0.7m,.49,.49,.45,Grass-Poison
 Charmander,8.5kg,0.6m,.52,.43,.65,Fire
 Ditto,4.0kg,0.3m,.48,.48,.48,Normal
-Evee,6.5kg,0.3m,.55,.50,.55,Normal
-Flaeron,25.0kg,0.9m,1,.60,.65,Fire
+Eevee,6.5kg,0.3m,.55,.50,.55,Normal
+Flareon,25.0kg,0.9m,1,.60,.65,Fire
 Gengar,40.5kg,1.5m,.65,.60,1,Ghost-Poison
 Greninja,40.0kg,1.5m,.95,.67,1,Water-Dark
 Jigglypuff,5.5kg,0.5m,.23,.67,.99,Normal-Fairy
@@ -16,3 +16,16 @@ Mewtwo,122.0kg,2.0m,1,.9,1,Psychic
 Oshawott,5.9kg,0.5m,.55,.45,.45,Water
 Pikachu,6.0kg,0.4m,.55,.40,.90,Electric
 Snorlax,460.0kg,2.1m,0.55,0.67,0.95,Normal
+Taillow,2.3kg,0.3m,.55,.30,.85,Normal-Flying
+Torterra,310.0kg,2.2m,1,1,.56,Grass-Ground
+Umbreon,27.0kg,1.0m,.65,1,.65,Dark
+Rotom,0.3kg,0.3m,.50,.77,.91,Electric-Ghost
+Scream Tail,8.0kg,1.2m,.65,.99,1,Fairy-Psychic
+Victini,4.0kg,0.4m,1,1,1,Psychic-Fire
+Wobbuffet,28.5kg,1.3m,.33,.58,.33,Psychic
+Wooper,8.5kg,0.4m,.45,.45,.15,Water-Ground
+Slowpoke,36.0kg,1.2m,.65,.65,.15,Water-Psychic
+Diglett,1.0kg,0.2m,.55,.30,.90,Ground-Steel
+Totodile,9.5kg,0.6m,.65,.64,.43,Water
+Snivy,8.1kg,0.6m,.45,.55,.63,Grass
+Cyndaquil,7.9kg,0.5m,.52,.43,.65,Fire
