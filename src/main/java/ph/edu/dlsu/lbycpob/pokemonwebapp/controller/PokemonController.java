@@ -31,5 +31,17 @@ public class PokemonController {
         }
         return "index";
     }
+    @PostMapping("/pokemon/random")
+    public String viewRandom(RedirectAttributes redirectAttributes) {
+        Pokemon randomPokemon = pokemonService.getRandomPokemon();
+        if (randomPokemon != null) {
+            redirectAttributes.addFlashAttribute("selectedPokemon", randomPokemon);
+            // Demonstrates polymorphism
+            randomPokemon.displayInfo();
+        } else {
+            redirectAttributes.addFlashAttribute("message", "No Pokemon available in the database.");
+        }
+        return "redirect:/";
+    }
 
 }
