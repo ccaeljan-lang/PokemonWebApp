@@ -39,6 +39,47 @@ public class PokemonService {
                 "Gyarados,235.0kg,6.5m,1.0,0.79,0.95,Water-Flying"
         };
         createPokemons(concatenate(csvData, sampleData));
+    }
+    private String[] concatenate(String[] array1, String[] array2) {
+        if (array1 == null) return array2 == null ? new String[0] : array2.clone();
+        if (array2 == null) return array1.clone();
+        String[] result = new String[array1.length + array2.length];
+        System.arraycopy(array1, 0, result, 0, array1.length);
+        System.arraycopy(array2, 0, result, array1.length, array2.length);
+        return result;
+    }
 
+    private void createPokemons(String[] lines) {
+        for (String line : lines) {
+            try {
+                pokemonList.add(PokemonFactory.createPokemonFromCSV(line));
+            } catch (Exception e) {
+                System.err.println("Error parsing Pokemon data: " + line);
+            }
+        }
+    }
+
+    public List<Pokemon> getAllPokemon() {
+        return new ArrayList<>(pokemonList);
+    }
+
+    public Pokemon getRandomPokemon() {
+        if (pokemonList.isEmpty()) return null;
+        return pokemonList.get(random.nextInt(pokemonList.size()));
+    }
+
+    public Pokemon searchPokemon(String name) {
+        return pokemonList.stream()
+                .filter(p -> p.getName().equalsIgnoreCase(name))
+                .findFirst()
+                .orElse(null);
+    }
+
+    public boolean removePokemon(String name) {
+        return pokemonList.removeIf(p -> p.getName().equalsIgnoreCase(name));
+    }
+
+    public int getPokemonCount() {
+        return pokemonList.size();
     }
 }
