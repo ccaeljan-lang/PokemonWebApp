@@ -18,5 +18,7 @@ public class Pokemon extends AbstractPokemon {
     }
     // Follow the first type by default
     public String getTypeBackground(String customType) {
+        return switch (customType) {
+        };
     }
 }
