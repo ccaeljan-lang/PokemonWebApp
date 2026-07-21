@@ -16,4 +16,7 @@ public class Pokemon extends AbstractPokemon {
         String primaryType = types[0].toUpperCase();
         return getTypeBackground(primaryType);
     }
+    // Follow the first type by default
+    public String getTypeBackground(String customType) {
+    }
 }
