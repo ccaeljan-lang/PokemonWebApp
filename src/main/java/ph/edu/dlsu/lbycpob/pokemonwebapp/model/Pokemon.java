@@ -6,12 +6,14 @@ public class Pokemon extends AbstractPokemon {
                    double attack, double defense, double stamina, String type) {
         super(instanceId, name, weight, height, attack, defense, stamina, type);
     }
-
     @Override
     public String getSpecialAbility() {
         return "Standard Pokemon ability for " + type + " type";
     }
     @Override
     public String getTypeBackground() {
+        String[] types = type.split("-");
+        String primaryType = types[0].toUpperCase();
+        return getTypeBackground(primaryType);
     }
 }
