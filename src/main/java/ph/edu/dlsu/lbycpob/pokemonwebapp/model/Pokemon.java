@@ -19,6 +19,10 @@ public class Pokemon extends AbstractPokemon {
     // Follow the first type by default
     public String getTypeBackground(String customType) {
         return switch (customType) {
+            case "WATER" -> "linear-gradient(to bottom, #6BB6FF, #0066CC)";
+            case "FIRE" -> "linear-gradient(to bottom, #FF6B6B, #CC0000)";
+            case "GRASS" -> "linear-gradient(to bottom, #4CAF50, #2E7D32)";
+            case "ELECTRIC" -> "linear-gradient(to bottom, #FFD700, #FFA500)";
         };
     }
 }
