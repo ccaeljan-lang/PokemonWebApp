@@ -225,3 +225,11 @@ body {
 .stat-bar.attack { background: red; }
 .stat-bar.defense { background: blue; }
 .stat-bar.stamina { background: green; }
+
+.group-name {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
