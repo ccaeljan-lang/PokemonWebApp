@@ -7,5 +7,7 @@ public class PokemonFactory {
                                         double attack, double defense, double stamina, String type) {
         return new Pokemon(counter.incrementAndGet(), name, weight, height, attack, defense, stamina, type);
     }
-
+    private static double parseWeight(String weightStr) {
+        return Double.parseDouble(weightStr.replace("kg", ""));
+    }
 }
